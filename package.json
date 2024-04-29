@@ -1,0 +1,50 @@
+{
+  "name": "e2ee-api-model",
+  "module": "index.ts",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/aes-js": "^3.1.4",
+    "@types/bun": "latest",
+    "@types/elliptic": "^6.4.18",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/mongoose": "^5.11.97",
+    "@types/supertest": "^6.0.2",
+    "ts-jest": "^29.1.2",
+    "ts-node-dev": "^2.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.32.27",
+    "@types/lodash": "^4.17.0",
+    "aes-js": "^3.1.2",
+    "barrelsby": "^2.8.1",
+    "dotenv": "^16.4.5",
+    "eciesjs": "^0.4.6",
+    "elliptic": "^6.5.5",
+    "express-async-handler": "^1.2.0",
+    "i": "^0.3.7",
+    "install": "^0.13.0",
+    "jest": "^29.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "mongo-mock": "^4.2.0",
+    "mongoose": "^8.3.2",
+    "supertest": "^7.0.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typebox-express-middleware": "^0.0.2"
+  },
+  "scripts": {
+    "install-bun": "npm install -g bun",
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "tsc --project tsconfig.json && tsc-alias",
+    "teste2ee": "bun run test e2eApi",
+    "test": "jest --forceExit",
+    "barrels": "barrelsby --config .barrelsby.json -q"
+  }
+}

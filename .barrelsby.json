@@ -1,0 +1,25 @@
+{
+  "directory": [
+    "./",
+    "./src",
+    "./src/configs",
+    "./src/utils",
+    "./src/routes",
+    "./src/interfaces",
+    "./src/repositories",
+    "./src/hooks"
+  ],
+  "exclude": [
+    "__mock__",
+    "__mocks__",
+    ".spec.ts",
+    ".test.ts",
+    "dist",
+    "coverage",
+    "node",
+    "browser",
+    "jest.*.ts",
+    ".d.ts"
+  ],
+  "delete": true
+}
